@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rental PS Thanos"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:textColor="#1E919F"/>
+
+    <TextView
+        android:id="@+id/tvtype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Type"
+        android:layout_below="@+id/tvtitle"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="#1E919F"
+        android:layout_marginTop="25dp"/>
+
+    <RadioGroup
+        android:id="@+id/itmRadioGroup"
+        android:layout_below="@+id/tvtype"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioPS5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PS5" />
+
+        <RadioButton
+            android:id="@+id/radioPS4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PS4" />
+
+        <RadioButton
+            android:id="@+id/radioPS3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PS3" />
+
+        <RadioButton
+            android:id="@+id/radioPSVR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PSVR" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tvtambahan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tambahan"
+        android:textStyle="bold"
+        android:layout_below="@+id/itmRadioGroup"
+        android:textSize="18sp"
+        android:textColor="#1E919F"
+        android:layout_marginTop="25dp" />
+
+    <RadioGroup
+        android:id="@+id/tambahanRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/tvtambahan">
+
+        <RadioButton
+            android:id="@+id/radioIndomie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Indomie" />
+
+        <RadioButton
+            android:id="@+id/radioMieayam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mie Ayma" />
+
+        <RadioButton
+            android:id="@+id/radioSiomay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Siomay" />
+
+
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tvWaktu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Waktu"
+        android:textStyle="bold"
+        android:layout_below="@+id/tambahanRadioGroup"
+        android:textSize="18sp"
+        android:textColor="#1E919F"
+        android:layout_marginTop="25dp" />
+
+    <EditText
+        android:id="@+id/etJam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Jam"
+        android:layout_below="@id/tvWaktu"/>
+
+    <Button
+        android:id="@+id/btnProcess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Proses"
+        android:layout_below="@+id/etJam"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#1E919F" />
+
+</RelativeLayout>
